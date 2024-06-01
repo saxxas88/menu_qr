@@ -1,0 +1,33 @@
+
+
+.container_portata{
+    margin: 15px auto;
+}
+.container_portata .container_pietanza  {
+    margin: 5px auto;
+}
+.container_portata p.title_portata,
+.container_portata .container_pietanza  p{
+    margin: 0;
+    text-align: center;
+}
+.container_portata p.title_portata{
+    font-weight: 600;
+    font-size: 20px;
+    color: #2d2d2d;
+   
+}
+
+.container_portata .container_pietanza  p{
+    font-weight: 500;
+    font-size: 17px;
+    color: #404040;
+}
+
+.container_portata .separator{
+    min-width: 50px;
+    max-width: 100px;
+    height: 2px;
+    margin: 30px auto;
+    background-color: #2d2d2d;
+}

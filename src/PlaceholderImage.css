@@ -1,0 +1,39 @@
+.placeholder_image{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.placeholder_image img{
+    height: 100%;
+    max-width: 100%;
+    opacity: .8;
+}
+
+.placeholder_image.top_right{
+    right: 0;
+    top: 0;
+}
+
+.placeholder_image.bottom_left{
+   left: 0;
+    bottom: 0;
+}
+
+@media screen and (min-width:1280px){
+    .placeholder_image.top_right{
+       
+       right: calc(100vw - 1280px);
+     
+    }
+}
+
+@media screen and (min-width:1280px){
+    .placeholder_image.bottom_left{
+       
+        left: calc(100vw - 1280px);
+     
+    }
+}

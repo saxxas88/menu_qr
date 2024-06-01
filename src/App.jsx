@@ -1,35 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import { useEffect, useState } from "react";
+import flowersTop from "./assets/flowers_top.png";
+import flowersBottom from "./assets/flowers_bottom.png";
+import viteLogo from "./assets/wedding.svg";
+import "./App.css";
+import Portata from "./components/Portata";
+import { menu,logoSvg } from "./config/menu";
+import PlaceholderImage from "./components/PlaceholderImage";
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
+  useEffect(()=>{
+      document.getElementById('logo').innerHTML=logoSvg()
+  },[logoSvg])
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="container_page">
+    <PlaceholderImage src={flowersTop} positionClass='top_right' />
+    <div className="container">
+    <div className="title">
+        <h2>S</h2>
+        <h3>&</h3>
+        <h2>D</h2>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="menu_title">
+      <p>02 / 06 / 2024</p>
+       
+        
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div id='logo'>
+        <img src={viteLogo} className="logo" alt="Vite logo" />
+      </div>
+      <div className="menu_title">
+     
+        <h2>Menu</h2>
+        
+      </div>
+      
+        {
+          menu && Array.isArray(menu) ?
+
+          menu?.length > 0 ?
+            menu.map((el,i)=> <Portata key={`${el.portata}${i}`}portata={el.portata} elenco={el.elenco}/>)
+          : (<Portata portata={'Nessun elemento'} elenco={[]}/>)
+          :
+          (
+            <div>Errore al caricamento dei dati</div>
+          )
+        }
+       
+      </div>
+      <PlaceholderImage src={flowersBottom} positionClass='bottom_left' />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
