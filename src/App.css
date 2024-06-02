@@ -70,6 +70,8 @@ div.title h3{
 
 .menu_title{
   margin:  20px auto;
+  position: relative;
+  z-index: 3;
 }
 .menu_title h2{
 

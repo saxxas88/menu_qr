@@ -14,6 +14,7 @@ function App() {
   },[logoSvg])
   return (
     <>
+    <title>Menu</title>
     <div className="container_page">
     <PlaceholderImage src={flowersTop} positionClass='top_right' />
     <div className="container">
