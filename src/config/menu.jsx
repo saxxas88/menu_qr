@@ -69,7 +69,10 @@ export const menu = [
         title: "Straccetti di vitello con rucola e parmigiano",
       },
       {
-        title: "Parmigiana di melanzane",
+        title: "Polpettone con piselli",
+      },
+      {
+        title: "Involtini di melanzane",
       },
       {
         title: "Zucchine ripiene con tonno e patate",
