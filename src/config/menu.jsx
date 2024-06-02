@@ -32,7 +32,7 @@ export const menu = [
     portata: "Antipasto",
     elenco: [
       {
-        title: "Prosciutto crudo e mozzarelline",
+        title: "Prosciutto crudo, capocollo e mozzarelline",
       },
       {
         title: "Tramezzino speck e patate",
@@ -76,10 +76,7 @@ export const menu = [
       },
       {
         title: "Zucchine ripiene con tonno e patate",
-      },
-      {
-        title: "Polpette di carne",
-      },
+      }
     ],
   },
   {
