@@ -2,6 +2,8 @@
 
 .container_portata{
     margin: 15px auto;
+    position: relative;
+    z-index: 3;
 }
 .container_portata .container_pietanza  {
     margin: 5px auto;

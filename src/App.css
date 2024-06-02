@@ -49,6 +49,8 @@ div.title{
   justify-content: center;
   align-items: center;
   column-gap: 15px;
+  position: relative;
+  z-index: 3;
 }
 div.title h2,
 div.title h3{
