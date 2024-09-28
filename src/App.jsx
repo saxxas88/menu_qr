@@ -24,7 +24,7 @@ function App() {
         <h2>D</h2>
       </div>
       <div className="menu_title">
-      <p>02 / 06 / 2024</p>
+      <p>29 / 09 / 2024</p>
        
         
       </div>

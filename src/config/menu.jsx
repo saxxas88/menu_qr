@@ -2,40 +2,33 @@ export const menu = [
   {
     portata: "Aperitivo",
     elenco: [
-      {
-        title: "Tartine alla crema di funghi",
-      },
-      {
-        title: "Tartine con caviale",
-      },
-      {
-        title: "Bruschette con peperoncino e funghi",
-      },
+     
       {
         title: "Spiedino mortadella, formaggio, oliva",
-      },
-      {
-        title: "Salumi vari",
       },
       {
         title: "Patatine snack",
       },
       {
-        title: "Tarallini",
+        title: "Tarallini & salatini",
       },
       {
-        title: "Prosecco all'arancia",
+        title: "Prosecco",
       }
     ],
   },
   {
     portata: "Antipasto",
     elenco: [
+      
       {
-        title: "Prosciutto crudo, capocollo e mozzarelline",
+        title: "Pasta sfoglia con pesto",
       },
       {
-        title: "Tramezzino speck e patate",
+        title: "Triangoli con speck e patate",
+      },
+      {
+        title: "Crocchette di patate",
       },
       {
         title: "Torta rustica",
@@ -44,10 +37,16 @@ export const menu = [
         title: "Spiedino di totano",
       },
       {
-        title: "Gambero in pastella",
+        title: "Pancarrè con patate e olive",
+      },
+      {
+        title: "Salumi e formaggi",
       },
       {
         title: "Insalata di mare",
+      },
+      {
+        title: "Carciofi",
       },
     ],
   },
@@ -63,20 +62,9 @@ export const menu = [
     portata: "Secondo",
     elenco: [
       {
-        title: "Scaloppine ai funghi",
+        title: "Straccetti di vitello con rucola e grana",
       },
-      {
-        title: "Straccetti di vitello con rucola e parmigiano",
-      },
-      {
-        title: "Polpettone con piselli",
-      },
-      {
-        title: "Involtini di melanzane",
-      },
-      {
-        title: "Zucchine ripiene con tonno e patate",
-      }
+      
     ],
   },
   {
@@ -86,7 +74,7 @@ export const menu = [
         title: "Patate al forno",
       },
       {
-        title: "Insalata mista con finocchio e noci",
+        title: "Insalata mista",
       },
     ],
   },
@@ -94,7 +82,7 @@ export const menu = [
     portata: "Dessert",
     elenco: [
       {
-        title: "Macedonia con gelato alla panna",
+        title: "Melone con gelato",
       },
       {
         title: "Spumante, caffè, amari",
